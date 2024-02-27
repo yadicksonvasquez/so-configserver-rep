@@ -1,6 +1,13 @@
 server:
   port: 9090
 
+# Config Server client
+spring:
+  cloud:
+    config:
+      uri:
+      - http://localhost:8888
+
 # Eureka client
 eureka:
  instance:
@@ -17,3 +24,22 @@ spring:
     url: jdbc:mysql://localhost:3306/db_products
     username: root
     password: root
+
+# Oauth2 JWT JWK Key Set Token
+security:
+  oauth2:
+   resource:
+      jwk:
+        key-set-uri: http://localhost:8204/.well-known/jwks.json
+
+# logging
+logging:
+  level:
+    root: INFO
+    sun:
+     rmi: ERROR
+    org:
+     springframework:
+      security:
+       web:
+        FilterChainProxy: DEBUG
