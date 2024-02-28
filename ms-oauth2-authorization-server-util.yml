@@ -21,3 +21,10 @@ security:
         key-store: keystore.jks
         key-store-password: mypass
         key-alias: myKeyStoreFile 
+
+# Mysql Database url
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_users
+    username: root
+    password: root
