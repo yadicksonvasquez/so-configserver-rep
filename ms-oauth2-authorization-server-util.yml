@@ -1,0 +1,23 @@
+server:
+  port: 8204
+
+# logging
+logging:
+  level:
+    root: INFO
+    sun:
+     rmi: ERROR
+    org:
+     springframework:
+      security:
+       web:
+        FilterChainProxy: DEBUG
+
+#  Java Keystore file RSA
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-store: keystore.jks
+        key-store-password: mypass
+        key-alias: myKeyStoreFile 
