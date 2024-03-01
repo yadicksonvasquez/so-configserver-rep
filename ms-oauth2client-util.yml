@@ -1,2 +1,6 @@
 server:
   port: 8432
+
+restTemplate:
+  connectTimeout: 10000
+  readTimeout: 10000
