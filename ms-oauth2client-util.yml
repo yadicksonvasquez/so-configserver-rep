@@ -7,3 +7,15 @@ restTemplate:
 
 endpoints:
    getToken: http://ms-oauth2-authorization-server-util/oauth/token
+
+# logging
+logging:
+  level:
+    root: INFO
+    sun:
+     rmi: ERROR
+    org:
+     springframework:
+      security:
+       web:
+        FilterChainProxy: DEBUG
