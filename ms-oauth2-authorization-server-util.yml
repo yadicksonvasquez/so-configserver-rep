@@ -1,6 +1,16 @@
 server:
   port: 8204
 
+# Eureka client
+eureka:
+ instance:
+   hostname: localhost
+ client:
+   register-with-eureka: true
+   fetch-registry: true  
+   serviceUrl:
+     defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
 # logging
 logging:
   level:

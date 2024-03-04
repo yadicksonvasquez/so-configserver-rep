@@ -1,12 +1,22 @@
 server:
   port: 8432
 
+# Eureka client
+eureka:
+ instance:
+   hostname: localhost
+ client:
+   register-with-eureka: true
+   fetch-registry: true  
+   serviceUrl:
+     defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
 restTemplate:
   connectTimeout: 10000
   readTimeout: 10000
 
 endpoints:
-   getToken: http://ms-oauth2-authorization-server-util:8204/oauth/token
+   getToken: http://ms-oauth2-authorization-server-util/oauth/token
 
 # logging
 logging:
