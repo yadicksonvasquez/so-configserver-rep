@@ -27,7 +27,7 @@ security:
   oauth2:
    resource:
       jwk:
-        key-set-uri: http://localhost:8204/.well-known/jwks.json
+        key-set-uri: http://ms-oauth2-authorization-server-util/.well-known/jwks.json
 
 # logging
 logging:
