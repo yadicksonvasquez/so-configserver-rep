@@ -19,3 +19,8 @@ logging:
       security:
        web:
         FilterChainProxy: DEBUG
+
+# Errors code
+errors:
+  ecommerceException01: Server not available
+  
