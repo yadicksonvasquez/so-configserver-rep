@@ -40,3 +40,8 @@ logging:
       security:
        web:
         FilterChainProxy: DEBUG
+
+# Errors code
+errors:
+  movementTypeSaveException: Inventory Movement Type not saved
+  
