@@ -43,5 +43,10 @@ logging:
 
 # Errors code
 errors:
-  movementTypeSaveException: Inventory Movement Type not saved
+  movementTypeSaveException: 
+    code: 001
+    message: Inventory Movement Type not saved
+  methodArgumentNotValidException:
+    code: 002
+    message: Parameters not valid
   
