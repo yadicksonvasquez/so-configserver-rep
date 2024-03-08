@@ -14,7 +14,7 @@ eureka:
 # logging
 logging:
   level:
-    root: DEBUG
+    root: INFO
     sun:
      rmi: ERROR
     org:
