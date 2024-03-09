@@ -32,5 +32,13 @@ logging:
 
 # Errors code
 errors:
-  ecommerceException01: Server not available
+  serverErrorException: 
+    code: 001
+    message: service UNAVAILABLE
+  parameterMandatoryException:
+    code: 002
+    message: Parameters not valid
+  unAuthorizedException:
+    code: 003
+    message: UnAuthorized
   
