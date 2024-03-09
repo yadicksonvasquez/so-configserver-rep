@@ -50,3 +50,7 @@ errors:
     code: 002
     message: Parameters not valid
   
+# Oauth2 Roles
+oauth2:
+  roles:
+    saveMovementType: ADMIN
