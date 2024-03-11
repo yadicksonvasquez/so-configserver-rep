@@ -54,3 +54,14 @@ errors:
 oauth2:
   roles:
     saveMovementType: ADMIN
+
+# Swagger Open API info
+swagger:
+   applicationDescription: Microservicio de Gestion de Productos para sistemas Ecommerce
+   applicationVersion: v1.0.0
+   applicationTitle: Microservicio de Gestion de Productos
+   termsOfService: http://swagger.io/terms
+   license: Apache 2.0
+   licenseUrl: http://springdoc.org
+   contactName: Yadickson Vasquez
+   contactEmail: yadicksonvasquez@gmail.com
