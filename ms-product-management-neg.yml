@@ -49,6 +49,9 @@ errors:
   methodArgumentNotValidException:
     code: 002
     message: Parameters not valid
+  methodNotFoundException:
+    code: 003
+    message: Record not found
   
 # Oauth2 Roles
 oauth2:
