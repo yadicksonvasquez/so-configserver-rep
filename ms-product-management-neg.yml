@@ -52,6 +52,9 @@ errors:
   messageNotFoundException:
     code: 003
     message: Record not found
+  messageParameterMandatoryException:
+    code: 004
+    message: Parameters mandatory not found
   
 # Oauth2 Roles
 oauth2:
