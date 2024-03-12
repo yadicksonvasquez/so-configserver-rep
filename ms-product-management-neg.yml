@@ -43,13 +43,13 @@ logging:
 
 # Errors code
 errors:
-  movementTypeSaveException: 
+  messageBusinessErrorException: 
     code: 001
-    message: Inventory Movement Type not saved
-  methodArgumentNotValidException:
+    message: Error in the business logic
+  messageArgumentNotValidException:
     code: 002
     message: Parameters not valid
-  methodNotFoundException:
+  messageNotFoundException:
     code: 003
     message: Record not found
   

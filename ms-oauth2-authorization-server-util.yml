@@ -38,3 +38,15 @@ spring:
     url: jdbc:mysql://localhost:3306/db_users
     username: root
     password: root
+
+# Errors code
+errors:
+  messageParameterMandatoryException: 
+    code: 001
+    message: Parameters mandatory not found
+  messageBusinessErrorException:
+    code: 002
+    message: Error in the business logic
+  messageNotFoundException:
+    code: 003
+    message: Record not found
