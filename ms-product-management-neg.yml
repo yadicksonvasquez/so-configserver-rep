@@ -71,3 +71,8 @@ swagger:
    licenseUrl: http://springdoc.org
    contactName: Yadickson Vasquez
    contactEmail: yadicksonvasquez@gmail.com
+
+#Upload Image
+storage:
+  upload_base_dir: C:\Program Files\Apache Software Foundation\Tomcat 10.1\webapps\ROOT\images\
+  base_url_server: http://localhost:8080/images/
