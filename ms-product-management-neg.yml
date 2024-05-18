@@ -55,6 +55,9 @@ errors:
   messageParameterMandatoryException:
     code: 004
     message: Parameters mandatory not found
+  messageFileNotFoundException:
+    code: 005
+    message: File not found
   
 # Oauth2 Roles
 oauth2:
