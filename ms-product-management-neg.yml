@@ -77,5 +77,5 @@ swagger:
 
 #Upload Image
 storage:
-  upload_base_dir: C:\Program Files\Apache Software Foundation\Tomcat 10.1\webapps\ROOT\images\
+  upload_base_dir: C:\\Program Files\\Apache Software Foundation\\Tomcat 10.1\\webapps\\ROOT\\images\\
   base_url_server: http://localhost:8080/images/
