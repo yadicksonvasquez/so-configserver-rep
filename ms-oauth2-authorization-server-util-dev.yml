@@ -1,0 +1,56 @@
+server:
+  port: 8204
+
+# Eureka client
+eureka:
+ instance:
+   hostname: localhost
+ client:
+   register-with-eureka: true
+   fetch-registry: true  
+   serviceUrl:
+     defaultZone: http://${eureka.instance.hostname}:8761/eureka/
+
+# logging
+logging:
+  level:
+    root: INFO
+    sun:
+     rmi: ERROR
+    org:
+     springframework:
+      security:
+       web:
+        FilterChainProxy: DEBUG
+
+#  Java Keystore file RSA
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-store: keystore.jks
+        key-store-password: mypass
+        key-alias: myKeyStoreFile 
+
+# Mysql Database url, liquidbase config
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/db_users
+    username: root
+    password: root
+  liquidbase:
+    enabled: true
+    change-log: classpath:db/dev/changelog/db.changelog-master.yaml
+
+# Errors code
+errors:
+  messageParameterMandatoryException: 
+    code: 001
+    message: Parameters mandatory not found
+  messageBusinessErrorException:
+    code: 002
+    message: Error in the business logic
+  messageNotFoundException:
+    code: 003
+    message: Record not found
+

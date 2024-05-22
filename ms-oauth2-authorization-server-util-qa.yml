@@ -32,12 +32,15 @@ security:
         key-store-password: mypass
         key-alias: myKeyStoreFile 
 
-# Mysql Database url
+# Mysql Database url, liquidbase config
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/db_users
     username: root
     password: root
+  liquidbase:
+    enabled: true
+    change-log: classpath:db/qa/changelog/db.changelog-master.yaml
 
 # Errors code
 errors:
@@ -50,3 +53,4 @@ errors:
   messageNotFoundException:
     code: 003
     message: Record not found
+
