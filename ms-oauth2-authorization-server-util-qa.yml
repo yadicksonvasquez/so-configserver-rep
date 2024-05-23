@@ -42,6 +42,8 @@ spring:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.yaml
     default-schema: db_users
+    contexts: qa
+    dropFirst: false
 
 # Errors code
 errors:
