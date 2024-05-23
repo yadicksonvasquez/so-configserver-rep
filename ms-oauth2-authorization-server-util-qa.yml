@@ -40,7 +40,8 @@ spring:
     password: root
   liquidbase:
     enabled: true
-    change-log: classpath:db/qa/changelog/db.changelog-master.yaml
+    change-log: classpath:db/db.changelog-master.yaml
+    default-schema: db_users
 
 # Errors code
 errors:
