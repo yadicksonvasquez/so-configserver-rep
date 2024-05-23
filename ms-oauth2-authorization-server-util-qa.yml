@@ -35,13 +35,13 @@ security:
 # Mysql Database url, liquidbase config
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/db_users
+    url: jdbc:mysql://localhost:3306/db_users_qa
     username: root
     password: root
   liquidbase:
     enabled: true
     change-log: classpath:db/changelog/db.changelog-master.yaml
-    default-schema: db_users
+    default-schema: db_users_qa
     contexts: qa
     dropFirst: false
 
